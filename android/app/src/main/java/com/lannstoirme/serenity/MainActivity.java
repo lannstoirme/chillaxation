@@ -1,4 +1,4 @@
-package com.serenity;
+package com.lannstoirme.serenity;
 
 import android.os.Bundle;
 

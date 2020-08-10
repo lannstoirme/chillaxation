@@ -131,11 +131,11 @@ android {
     }
 
     defaultConfig {
-        applicationId "com.serenity"
+        applicationId 'com.lannstoirme.serenity'
         minSdkVersion rootProject.ext.minSdkVersion
         targetSdkVersion rootProject.ext.targetSdkVersion
         versionCode 1
-        versionName "1.0"
+        versionName "1.0.0"
     }
     splits {
         abi {

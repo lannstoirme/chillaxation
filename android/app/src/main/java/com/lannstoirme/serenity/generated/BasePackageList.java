@@ -1,4 +1,4 @@
-package com.serenity.generated;
+package com.lannstoirme.serenity.generated;
 
 import java.util.Arrays;
 import java.util.List;

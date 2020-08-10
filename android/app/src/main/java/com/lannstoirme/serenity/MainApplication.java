@@ -1,4 +1,4 @@
-package com.serenity;
+package com.lannstoirme.serenity;
 
 import android.app.Application;
 import android.content.Context;
@@ -6,12 +6,13 @@ import android.net.Uri;
 
 import com.facebook.react.PackageList;
 import com.facebook.react.ReactApplication;
+import com.zmxv.RNSound.RNSoundPackage;
 import com.facebook.react.ReactInstanceManager;
 import com.facebook.react.ReactNativeHost;
 import com.facebook.react.ReactPackage;
 import com.facebook.react.shell.MainReactPackage;
 import com.facebook.soloader.SoLoader;
-import com.serenity.generated.BasePackageList;
+import com.lannstoirme.serenity.generated.BasePackageList;
 
 import org.unimodules.adapters.react.ReactAdapterPackage;
 import org.unimodules.adapters.react.ModuleRegistryAdapter;
@@ -41,9 +42,10 @@ public class MainApplication extends Application implements ReactApplication {
 
     @Override
     protected List<ReactPackage> getPackages() {
-      List<ReactPackage> packages = new PackageList(this).getPackages();
-      packages.add(new ModuleRegistryAdapter(mModuleRegistryProvider));
-      return packages;
+      return Arrays.<ReactPackage>asList(
+        new MainReactPackage(),
+        new RNSoundPackage()
+      );
     }
 
     @Override
