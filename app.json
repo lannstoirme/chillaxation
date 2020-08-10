@@ -1,0 +1,12 @@
+{
+  "name": "serenity",
+  "displayName": "serenity",
+  "expo": {
+    "name": "serenity",
+    "slug": "serenity",
+    "version": "1.0.0",
+    "assetBundlePatterns": [
+      "**/*"
+    ]
+  }
+}
